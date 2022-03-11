@@ -939,7 +939,7 @@ class Minio {
       bucket,
       object,
       partSize,
-      metadata,
+      metadata!,
       onProgress,
     );
     final chunker = MinChunkSize(partSize);
