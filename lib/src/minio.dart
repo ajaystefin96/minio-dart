@@ -929,7 +929,7 @@ class Minio {
       throw MinioInvalidArgumentError('Minimum chunk size is 5MB');
     }
 
-    metadata = prependXAMZMeta(metadata ?? <String, String>{});
+    // metadata = prependXAMZMeta(metadata ?? <String, String>{});
 
     final partSize = chunkSize ?? _calculatePartSize(size ?? maxObjectSize);
 
